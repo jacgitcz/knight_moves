@@ -2,7 +2,7 @@
 
 Odin Project : Ruby Programming : Data Structures
 
-The #knight_moves function attempts to find the shortest path from a given start position to a given target position
+The #knight_moves function attempts to find the shortest path from a given start position to a given target position for a chess knight.  It assumes a standard 8x8 chessboard.  Positions on the board are given by x, y coordinates (not standard chess terms), with each coordinate in the range 0 to 7 inclusive.
 
 The program builds a tree with the start position as root until a child is added with the required target position. It then traces the path back from the child to the root using the parent links.
 
@@ -12,5 +12,5 @@ The #build_tree function uses a queue to ensure breadth-first search.  Using BFS
 
 Class Knight has a method #valid_moves, which returns all the reachable legal positions from a given start.
 
-There is no explicit implementation of the board  - it is implicit in the boundary checks.  It might be cleaner to define the board limits using constants, say BOARD_MIN and BOARD_MAX
+There is no explicit implementation of the board  - it is implicit in the boundary checks.  It might be cleaner to define the board limits using constants, say BOARD_MIN and BOARD_MAX.
 
